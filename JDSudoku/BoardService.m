@@ -28,6 +28,10 @@ static BoardService* sBoardService = nil;
 #pragma Mark Initial Setup ------
 
 -(NSArray*)createNewBoard{
+//    ^^ MAIN SUDOKU ALGORITHM -------------------
+//    ^^ Generates 1 unique cell
+//    ^^ Uses cell to rotate and place rows (3x1) and columns (1x3) into adjacent positions
+    
     NSMutableArray* board = [[NSMutableArray alloc] init];
     for (int row = 0; row < 9; row++) {
         [board addObject:[@[@0,@0,@0,@0,@0,@0,@0,@0,@0] mutableCopy]];
@@ -63,6 +67,7 @@ static BoardService* sBoardService = nil;
 #pragma Mark Helper Methods ------
 
 -(NSArray*)generateNewThreeByThree{
+//    ^^ Create a unique 3x3 grid
     NSMutableArray* newThreeByThree = [@[[NSMutableArray new], [NSMutableArray new], [NSMutableArray new]] mutableCopy];
     NSMutableArray* copyOfFull = [self.totalPossibleNumbers mutableCopy];
     for (int row = 0; row < 3; row++) {
@@ -90,9 +95,8 @@ static BoardService* sBoardService = nil;
     }
 }
 
-
 -(NSInteger)indexOfRandomTileInCell:(NSInteger)cellIndex{
-//  ^^ the same index can be selected more than once, resulting in slightly varying results for each run
+//    ^^ The same index can be selected more than once, resulting in slightly varying results for each run
     NSInteger randomTileIndexInCell = arc4random() % 9;
     NSInteger randomTileRowIndex = randomTileIndexInCell/3;
     NSInteger randomTileColumnIndex = randomTileIndexInCell % 3;

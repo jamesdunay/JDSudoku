@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7215D55A1A795339009A3795 /* BoardTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7215D5591A795339009A3795 /* BoardTile.m */; };
 		721FB84D1A72EE240034C153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB84C1A72EE240034C153 /* main.m */; };
 		721FB8501A72EE240034C153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB84F1A72EE240034C153 /* AppDelegate.m */; };
 		721FB8531A72EE240034C153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB8521A72EE240034C153 /* ViewController.m */; };
@@ -18,7 +19,6 @@
 		72D71B771A75692B00854B23 /* SudokuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D71B761A75692B00854B23 /* SudokuViewController.m */; };
 		72D71B7A1A75915300854B23 /* BoardService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D71B791A75915300854B23 /* BoardService.m */; };
 		72EE03DE1A75EC0A0043BF0A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE03DD1A75EC0A0043BF0A /* Item.m */; };
-		72EE03E21A75FE780043BF0A /* BoardTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE03E11A75FE780043BF0A /* BoardTile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7215D5581A795339009A3795 /* BoardTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTile.h; sourceTree = "<group>"; };
+		7215D5591A795339009A3795 /* BoardTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTile.m; sourceTree = "<group>"; };
 		721FB8471A72EE240034C153 /* JDSudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDSudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721FB84B1A72EE240034C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		721FB84C1A72EE240034C153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		72D71B791A75915300854B23 /* BoardService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardService.m; sourceTree = "<group>"; };
 		72EE03DC1A75EC0A0043BF0A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		72EE03DD1A75EC0A0043BF0A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		72EE03E01A75FE780043BF0A /* BoardTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardTile.h; path = ../BoardTile.h; sourceTree = "<group>"; };
-		72EE03E11A75FE780043BF0A /* BoardTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardTile.m; path = ../BoardTile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 				727D588A1A7732D100B77A26 /* Board.m */,
 				727D58861A76DAA700B77A26 /* DigitSelector.h */,
 				727D58871A76DAA800B77A26 /* DigitSelector.m */,
-				72EE03E01A75FE780043BF0A /* BoardTile.h */,
-				72EE03E11A75FE780043BF0A /* BoardTile.m */,
+				7215D5581A795339009A3795 /* BoardTile.h */,
+				7215D5591A795339009A3795 /* BoardTile.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -279,12 +279,12 @@
 			files = (
 				72EE03DE1A75EC0A0043BF0A /* Item.m in Sources */,
 				72D71B771A75692B00854B23 /* SudokuViewController.m in Sources */,
+				7215D55A1A795339009A3795 /* BoardTile.m in Sources */,
 				72D71B7A1A75915300854B23 /* BoardService.m in Sources */,
 				721FB8531A72EE240034C153 /* ViewController.m in Sources */,
 				727D58881A76DAA800B77A26 /* DigitSelector.m in Sources */,
 				721FB8501A72EE240034C153 /* AppDelegate.m in Sources */,
 				727D588B1A7732D100B77A26 /* Board.m in Sources */,
-				72EE03E21A75FE780043BF0A /* BoardTile.m in Sources */,
 				721FB84D1A72EE240034C153 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

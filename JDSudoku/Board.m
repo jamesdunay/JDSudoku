@@ -25,15 +25,14 @@
     self = [super init];
     if (self) {
         
-        self.shouldBeMinimized = YES;
-        
         self.heightConstraints = [[NSMutableArray alloc] init];
         self.topConstraints = [[NSMutableArray alloc] init];
+        self.shouldBeMinimized = YES;
         
         self.boardData = [[BoardService sharedInstance] createNewBoard];
         [self createViewsForItems];
         [self generateFilledAnswers:BoardDifficultyEasy];
-        
+//        ^^ Can be changed to Easy, Medium, or Hard
         [self fadeFromTileIndex:40 fadeIn:YES];
     }
     return self;
@@ -111,7 +110,6 @@
             boardTile.tag = idx * 9 + arrayIdx;
             
             Item* item = [Item itemWithDisplayValue:@"?" andActualValue:number];
-            
             [boardTile setItem:item];
             [self addSubview:boardTile];
             
@@ -122,19 +120,18 @@
 }
 
 -(void)generateFilledAnswers:(NSInteger)difficultySetting{
+//    ^^ Creates prefilled answers dependent on difficulty setting
     for (int cellIndex = 0; cellIndex < 9; cellIndex++) {
         for (int iteration = 0; iteration < difficultySetting; iteration++) {
             NSInteger randomTileIndex = [[BoardService  sharedInstance] indexOfRandomTileInCell:cellIndex];
-            
             [(BoardTile*)self.subviews[randomTileIndex] showAnswer];
         }
     }
 }
 
 -(void)fadeFromTileIndex:(NSInteger)targetIndex fadeIn:(BOOL)fadeIn{
-    
+//    ^^ fades tiles in radial pattern from given index
     CGPoint tapLoaction = [self locationInBoardFromIndex:targetIndex];
-    
     for (int row = 0; row < 8; row++) {
         for (int column = 0; column < 8; column++) {
             
@@ -165,18 +162,16 @@
 #pragma Mark View Animations ------
 
 -(void)fadeItem:(UIView*)view fromRow:(NSInteger)row andColumn:(NSInteger)column fadeIn:(BOOL)fadeIn{
-    [UIView animateWithDuration:1.f
+    [UIView animateWithDuration:.3f
                           delay:(.1 * row) + (.1 * column)
-         usingSpringWithDamping:10.f
-          initialSpringVelocity:10.f
-                        options:UIViewAnimationOptionAllowUserInteraction
+                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          [view setAlpha:fadeIn];
                      } completion:nil];
 }
 
 -(void)adjustPositions{
-    
+//    ^^ Moves tiles while also scaling heights. Animations are not fired till the last index to lighten load on main thread.
     [self.heightConstraints enumerateObjectsUsingBlock:^(NSLayoutConstraint* constraint, NSUInteger idx, BOOL *stop) {
         constraint.constant = self.frame.size.width / (18 / (2 - self.shouldBeMinimized));
         if (idx == 80) {
@@ -209,14 +204,14 @@
 
 
 -(void)adjustScaleForIndex:(NSInteger)index{
-    
+//    ^^ Used for tapping on a cell to give it some visual hierarchy
     CGPoint centerPoint = [self locationInBoardFromIndex:index];
     CATransform3D transform = CATransform3DIdentity;
     transform.m34 = 1.0f / -400.f;
     
     [self.subviews enumerateObjectsUsingBlock:^(BoardTile* tile, NSUInteger idx, BOOL *stop) {
         NSInteger distanceFromPoint = [self getDistanceFrom:centerPoint withLocation:[self locationInBoardFromIndex:idx]];
-        CGFloat zDepth = -distanceFromPoint * 200 * self.shouldBeMinimized;
+        CGFloat zDepth = -distanceFromPoint * 200 * self.shouldBeMinimized + 100;
         CGFloat dampening = 85.f;
         CGFloat velo = 25.f;
         CGFloat duration = 1.f;
@@ -232,12 +227,13 @@
               initialSpringVelocity:velo
                             options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
                          animations:^{
-                             tile.layer.transform = CATransform3DTranslate(transform, 0, 0, zDepth);
+                             tile.label.layer.transform = CATransform3DTranslate(transform, 0, 0, zDepth);
                          } completion:nil];
     }];
 }
 
 -(void)adjustAlphaForIndex:(NSInteger)index{
+    
     CGPoint centerPoint = [self locationInBoardFromIndex:index];
     [self.subviews enumerateObjectsUsingBlock:^(BoardTile* tile, NSUInteger idx, BOOL *stop) {
         NSInteger distanceFromPoint = [self getDistanceFrom:centerPoint withLocation:[self locationInBoardFromIndex:idx]];
@@ -253,12 +249,15 @@
 #pragma Mark Helper Methods ------
 
 -(BOOL)pointIsValid:(CGPoint)point{
+//    ^^ Check to see if point is on board
     if (point.x > 8 || point.x < 0) return NO;
     if (point.y > 8 || point.y < 0) return NO;
     return YES;
 }
 
 -(CGFloat)getDistanceFrom:(CGPoint)pointOne withLocation:(CGPoint)pointTwo{
+//    ^^ Returns distance between two points
+    
     NSInteger xTileDistance = (pointOne.x) - (pointTwo.x);
     NSInteger yTileDistance = pointOne.y - pointTwo.y;
     
