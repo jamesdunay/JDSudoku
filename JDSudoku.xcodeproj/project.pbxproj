@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		721FB84D1A72EE240034C153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB84C1A72EE240034C153 /* main.m */; };
+		721FB8501A72EE240034C153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB84F1A72EE240034C153 /* AppDelegate.m */; };
+		721FB8531A72EE240034C153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB8521A72EE240034C153 /* ViewController.m */; };
+		721FB8581A72EE240034C153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721FB8571A72EE240034C153 /* Images.xcassets */; };
+		721FB85B1A72EE240034C153 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721FB8591A72EE240034C153 /* LaunchScreen.xib */; };
+		721FB8671A72EE250034C153 /* JDSudokuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 721FB8661A72EE250034C153 /* JDSudokuTests.m */; };
+		727D58881A76DAA800B77A26 /* DigitSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 727D58871A76DAA800B77A26 /* DigitSelector.m */; };
+		727D588B1A7732D100B77A26 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 727D588A1A7732D100B77A26 /* Board.m */; };
+		72D71B771A75692B00854B23 /* SudokuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D71B761A75692B00854B23 /* SudokuViewController.m */; };
+		72D71B7A1A75915300854B23 /* BoardService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D71B791A75915300854B23 /* BoardService.m */; };
+		72EE03DE1A75EC0A0043BF0A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE03DD1A75EC0A0043BF0A /* Item.m */; };
+		72EE03E21A75FE780043BF0A /* BoardTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE03E11A75FE780043BF0A /* BoardTile.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		721FB8611A72EE250034C153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 721FB83F1A72EE240034C153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 721FB8461A72EE240034C153;
+			remoteInfo = JDSudoku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		721FB8471A72EE240034C153 /* JDSudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDSudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		721FB84B1A72EE240034C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721FB84C1A72EE240034C153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		721FB84E1A72EE240034C153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		721FB84F1A72EE240034C153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		721FB8511A72EE240034C153 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		721FB8521A72EE240034C153 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		721FB8571A72EE240034C153 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		721FB85A1A72EE240034C153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		721FB8601A72EE250034C153 /* JDSudokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDSudokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		721FB8651A72EE250034C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721FB8661A72EE250034C153 /* JDSudokuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDSudokuTests.m; sourceTree = "<group>"; };
+		727D58861A76DAA700B77A26 /* DigitSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitSelector.h; sourceTree = "<group>"; };
+		727D58871A76DAA800B77A26 /* DigitSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitSelector.m; sourceTree = "<group>"; };
+		727D58891A7732D100B77A26 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		727D588A1A7732D100B77A26 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		72D71B751A75692B00854B23 /* SudokuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuViewController.h; sourceTree = "<group>"; };
+		72D71B761A75692B00854B23 /* SudokuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuViewController.m; sourceTree = "<group>"; };
+		72D71B781A75915300854B23 /* BoardService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardService.h; sourceTree = "<group>"; };
+		72D71B791A75915300854B23 /* BoardService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardService.m; sourceTree = "<group>"; };
+		72EE03DC1A75EC0A0043BF0A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		72EE03DD1A75EC0A0043BF0A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		72EE03E01A75FE780043BF0A /* BoardTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardTile.h; path = ../BoardTile.h; sourceTree = "<group>"; };
+		72EE03E11A75FE780043BF0A /* BoardTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardTile.m; path = ../BoardTile.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721FB8441A72EE240034C153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721FB85D1A72EE250034C153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		721FB83E1A72EE240034C153 = {
+			isa = PBXGroup;
+			children = (
+				721FB8491A72EE240034C153 /* JDSudoku */,
+				721FB8631A72EE250034C153 /* JDSudokuTests */,
+				721FB8481A72EE240034C153 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		721FB8481A72EE240034C153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721FB8471A72EE240034C153 /* JDSudoku.app */,
+				721FB8601A72EE250034C153 /* JDSudokuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		721FB8491A72EE240034C153 /* JDSudoku */ = {
+			isa = PBXGroup;
+			children = (
+				721FB84E1A72EE240034C153 /* AppDelegate.h */,
+				721FB84F1A72EE240034C153 /* AppDelegate.m */,
+				72EE03DF1A75FE5F0043BF0A /* Views */,
+				72EE03DB1A75EBCE0043BF0A /* Service */,
+				72EE03D91A75EBB10043BF0A /* Model */,
+				72EE03DA1A75EBBB0043BF0A /* Wrong!! */,
+				721FB8571A72EE240034C153 /* Images.xcassets */,
+				721FB8591A72EE240034C153 /* LaunchScreen.xib */,
+				721FB84A1A72EE240034C153 /* Supporting Files */,
+			);
+			path = JDSudoku;
+			sourceTree = "<group>";
+		};
+		721FB84A1A72EE240034C153 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				721FB84B1A72EE240034C153 /* Info.plist */,
+				721FB84C1A72EE240034C153 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		721FB8631A72EE250034C153 /* JDSudokuTests */ = {
+			isa = PBXGroup;
+			children = (
+				721FB8661A72EE250034C153 /* JDSudokuTests.m */,
+				721FB8641A72EE250034C153 /* Supporting Files */,
+			);
+			path = JDSudokuTests;
+			sourceTree = "<group>";
+		};
+		721FB8641A72EE250034C153 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				721FB8651A72EE250034C153 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72EE03D91A75EBB10043BF0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72EE03DC1A75EC0A0043BF0A /* Item.h */,
+				72EE03DD1A75EC0A0043BF0A /* Item.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		72EE03DA1A75EBBB0043BF0A /* Wrong!! */ = {
+			isa = PBXGroup;
+			children = (
+				721FB8511A72EE240034C153 /* ViewController.h */,
+				721FB8521A72EE240034C153 /* ViewController.m */,
+			);
+			name = "Wrong!!";
+			sourceTree = "<group>";
+		};
+		72EE03DB1A75EBCE0043BF0A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				72D71B781A75915300854B23 /* BoardService.h */,
+				72D71B791A75915300854B23 /* BoardService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		72EE03DF1A75FE5F0043BF0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72D71B751A75692B00854B23 /* SudokuViewController.h */,
+				72D71B761A75692B00854B23 /* SudokuViewController.m */,
+				727D58891A7732D100B77A26 /* Board.h */,
+				727D588A1A7732D100B77A26 /* Board.m */,
+				727D58861A76DAA700B77A26 /* DigitSelector.h */,
+				727D58871A76DAA800B77A26 /* DigitSelector.m */,
+				72EE03E01A75FE780043BF0A /* BoardTile.h */,
+				72EE03E11A75FE780043BF0A /* BoardTile.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		721FB8461A72EE240034C153 /* JDSudoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721FB86A1A72EE250034C153 /* Build configuration list for PBXNativeTarget "JDSudoku" */;
+			buildPhases = (
+				721FB8431A72EE240034C153 /* Sources */,
+				721FB8441A72EE240034C153 /* Frameworks */,
+				721FB8451A72EE240034C153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDSudoku;
+			productName = JDSudoku;
+			productReference = 721FB8471A72EE240034C153 /* JDSudoku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		721FB85F1A72EE250034C153 /* JDSudokuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721FB86D1A72EE250034C153 /* Build configuration list for PBXNativeTarget "JDSudokuTests" */;
+			buildPhases = (
+				721FB85C1A72EE250034C153 /* Sources */,
+				721FB85D1A72EE250034C153 /* Frameworks */,
+				721FB85E1A72EE250034C153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				721FB8621A72EE250034C153 /* PBXTargetDependency */,
+			);
+			name = JDSudokuTests;
+			productName = JDSudokuTests;
+			productReference = 721FB8601A72EE250034C153 /* JDSudokuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721FB83F1A72EE240034C153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "James Dunay";
+				TargetAttributes = {
+					721FB8461A72EE240034C153 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					721FB85F1A72EE250034C153 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 721FB8461A72EE240034C153;
+					};
+				};
+			};
+			buildConfigurationList = 721FB8421A72EE240034C153 /* Build configuration list for PBXProject "JDSudoku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 721FB83E1A72EE240034C153;
+			productRefGroup = 721FB8481A72EE240034C153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				721FB8461A72EE240034C153 /* JDSudoku */,
+				721FB85F1A72EE250034C153 /* JDSudokuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		721FB8451A72EE240034C153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721FB85B1A72EE240034C153 /* LaunchScreen.xib in Resources */,
+				721FB8581A72EE240034C153 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721FB85E1A72EE250034C153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721FB8431A72EE240034C153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EE03DE1A75EC0A0043BF0A /* Item.m in Sources */,
+				72D71B771A75692B00854B23 /* SudokuViewController.m in Sources */,
+				72D71B7A1A75915300854B23 /* BoardService.m in Sources */,
+				721FB8531A72EE240034C153 /* ViewController.m in Sources */,
+				727D58881A76DAA800B77A26 /* DigitSelector.m in Sources */,
+				721FB8501A72EE240034C153 /* AppDelegate.m in Sources */,
+				727D588B1A7732D100B77A26 /* Board.m in Sources */,
+				72EE03E21A75FE780043BF0A /* BoardTile.m in Sources */,
+				721FB84D1A72EE240034C153 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721FB85C1A72EE250034C153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721FB8671A72EE250034C153 /* JDSudokuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		721FB8621A72EE250034C153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 721FB8461A72EE240034C153 /* JDSudoku */;
+			targetProxy = 721FB8611A72EE250034C153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		721FB8591A72EE240034C153 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721FB85A1A72EE240034C153 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		721FB8681A72EE250034C153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		721FB8691A72EE250034C153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		721FB86B1A72EE250034C153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JDSudoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		721FB86C1A72EE250034C153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JDSudoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		721FB86E1A72EE250034C153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JDSudokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDSudoku.app/JDSudoku";
+			};
+			name = Debug;
+		};
+		721FB86F1A72EE250034C153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JDSudokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDSudoku.app/JDSudoku";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721FB8421A72EE240034C153 /* Build configuration list for PBXProject "JDSudoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721FB8681A72EE250034C153 /* Debug */,
+				721FB8691A72EE250034C153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721FB86A1A72EE250034C153 /* Build configuration list for PBXNativeTarget "JDSudoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721FB86B1A72EE250034C153 /* Debug */,
+				721FB86C1A72EE250034C153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721FB86D1A72EE250034C153 /* Build configuration list for PBXNativeTarget "JDSudokuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721FB86E1A72EE250034C153 /* Debug */,
+				721FB86F1A72EE250034C153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 721FB83F1A72EE240034C153 /* Project object */;
+}
