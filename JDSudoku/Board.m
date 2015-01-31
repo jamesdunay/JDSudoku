@@ -211,7 +211,7 @@
     
     [self.subviews enumerateObjectsUsingBlock:^(BoardTile* tile, NSUInteger idx, BOOL *stop) {
         NSInteger distanceFromPoint = [self getDistanceFrom:centerPoint withLocation:[self locationInBoardFromIndex:idx]];
-        CGFloat zDepth = -distanceFromPoint * 200 * self.shouldBeMinimized + 100;
+        CGFloat zDepth = -distanceFromPoint * 200 * self.shouldBeMinimized;
         CGFloat dampening = 85.f;
         CGFloat velo = 25.f;
         CGFloat duration = 1.f;
